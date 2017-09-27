@@ -1,3 +1,5 @@
+package com.baidu.langshiquan.ioc;
+
 import java.io.IOException;
 
 import org.junit.Test;

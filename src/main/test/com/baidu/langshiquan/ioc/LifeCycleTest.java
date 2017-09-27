@@ -1,3 +1,5 @@
+package com.baidu.langshiquan.ioc;
+
 import org.junit.Test;
 
 import com.baidu.langshiquan.ioc.LifeCycleBean;

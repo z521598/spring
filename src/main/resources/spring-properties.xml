@@ -9,10 +9,10 @@
     <!--加载properties配置文件-->
     <context:component-scan base-package="com.baidu.langshiquan.ioc.annotation"/>
     <context:property-placeholder location="classpath:application-pro.properties"/>
-    <context:property-placeholder location="classpath:application.properties"/>
-    <bean id="propertiesUser" class="com.baidu.langshiquan.ioc.User">
-    <property name="id" value="7"/>
-    <!--是通过${}获取propertis属性-->
-    <property name="name" value="${test.demo}"/>
-    </bean>
+    <!--<context:property-placeholder location="classpath:application.properties"/>-->
+    <!--<bean id="propertiesUser" class="com.baidu.langshiquan.ioc.User">-->
+    <!--<property name="id" value="7"/>-->
+    <!--&lt;!&ndash;是通过${}获取propertis属性&ndash;&gt;-->
+    <!--<property name="name" value="${test.demo}"/>-->
+    <!--</bean>-->
 </beans>

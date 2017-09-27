@@ -1,13 +1,16 @@
 package com.baidu.langshiquan.ioc.annotation;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import com.baidu.langshiquan.ioc.User;
 
 /**
  * Created by langshiquan on 17/9/27.
  */
+@Component
 @Configuration
 public class UserCongfig {
 
