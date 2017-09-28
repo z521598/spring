@@ -1,4 +1,4 @@
-package com.baidu.langshiquan.aop.aspectj;
+package com.baidu.langshiquan.aop.param;
 
 import org.springframework.stereotype.Component;
 
@@ -9,7 +9,7 @@ import com.baidu.langshiquan.aop.Order;
  * Created by langshiquan on 17/9/28.
  */
 @Component
-public class OrderService2 {
+public class OrderService3 {
     public boolean updateOrder(Long id) {
         return false;
     }
