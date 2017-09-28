@@ -2,6 +2,7 @@ package com.baidu.langshiquan.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
+@EnableAspectJAutoProxy
 public class HttpAspect {
 
     // 切入点
