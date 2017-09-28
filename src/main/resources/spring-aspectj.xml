@@ -7,28 +7,5 @@
          http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="logAspect" class="com.baidu.langshiquan.aop.LogAspect"/>
-    <context:component-scan base-package="com.baidu.langshiquan.aop"/>
-    <aop:config>
-        <aop:aspect id="asp" ref="logAspect">
-            <aop:pointcut id="pc" expression="execution(public * *(..))"/>
-            <aop:before method="before" pointcut-ref="pc"/>
-            <aop:after method="after" pointcut-ref="pc"/>
-            <!--通知：传递参数-->
-            <aop:around method="around"
-                        pointcut="execution(* com.baidu.langshiquan.aop.UserService.updateUser(Long))
-                        and args(id)"/>
-        </aop:aspect>
-    </aop:config>
-
-
-    <!--Spring Aop API-->
-    <!--<bean id="pointBean" class="org.springframework.aop.support.NameMatchMethodPointcut">-->
-    <!--<property name="mappedNames">-->
-    <!--<list>-->
-
-    <!--</list>-->
-    <!--</property>-->
-    <!--</bean>-->
-    <!--<bean class="org.springframework.aop.framework.ProxyFactoryBean"/>-->
+    <context:component-scan base-package="com.baidu.langshiquan.aop.aspectj"/>
 </beans>
